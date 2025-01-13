@@ -1,0 +1,7 @@
+addcanvas cnvs 200 200
+rectangle cnvs fig 0,0 100 100
+color fig red
+dilate fig 0.5
+waitenter
+clear
+exit
