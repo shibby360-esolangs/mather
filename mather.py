@@ -107,8 +107,8 @@ def mather(code, canvases={}, vars={}):
       fig, cvs, dct = findfig(splt[1])
       coords = cvs.coords(fig)
       for i in range(0,len(coords),2):
-        coords[i] *= int(splt[2])
-        coords[i+1] *= int(splt[2])
+        coords[i] *= float(splt[2])
+        coords[i+1] *= float(splt[2])
         if len(splt) == 3:
           splt.append('0,0')
         coords[i], coords[i+1] = coords[i] + int(splt[3].split(',')[0]), coords[i+1] + int(splt[3].split(',')[1])
